@@ -84,3 +84,17 @@
 .counter > span {
   margin: 10px;
 }
+
+/* totalCartPrice */
+.totalCartPrice > p {
+  text-align: right;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.totalPrice {
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}

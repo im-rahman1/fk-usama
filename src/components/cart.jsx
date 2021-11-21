@@ -2,6 +2,11 @@ import React from "react";
 import "./cart.css";
 
 const Cart = ({ cartItems, handleAdd, handleRemove }) => {
+  const totalCartPrice = cartItems.reduce(
+    (price, item) => price + item.quantity * item.price,
+    0
+  );
+
   return (
     <div>
       {cartItems.length === 0 && (
@@ -42,7 +47,14 @@ const Cart = ({ cartItems, handleAdd, handleRemove }) => {
               </div>
             </div>
           ))}
-          <div></div>
+          {cartItems.length !== 0 && (
+            <div className="totalCartPrice">
+              <p>
+                Total Price:{" "}
+                <span className="totalPrice">${totalCartPrice}</span>
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>
