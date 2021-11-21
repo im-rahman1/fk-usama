@@ -1,0 +1,39 @@
+.navBar {
+  width: 100%;
+  background: antiquewhite;
+  height: 40px;
+  position: fixed;
+  box-shadow: rgb(87, 87, 87) 0px 0.5px 7px;
+  padding: 10px;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.navLogo {
+  font-size: 30px;
+  opacity: 0.8;
+}
+
+.cartIcon {
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.cartIconImg {
+  width: 40px;
+  opacity: 0.7;
+}
+
+.cartIcon > span {
+  background: rgb(247, 206, 153);
+  padding: 2px 5px;
+  border-radius: 5px;
+  position: relative;
+  bottom: 25px;
+  right: 10px;
+}

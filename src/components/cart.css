@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.productItem {
+  display: flex;
+  /* background: lightgrey; */
+  flex-direction: row;
+  padding: 10px;
+  max-width: 600px;
+  justify-content: space-between;
+}
+
+.productImg > img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.imgDescContainer {
+  display: flex;
+}
+
+.imgDescContainer > .productText {
+  margin: 0px 10px;
+}
+
+.counterContainer > p {
+  background-color: antiquewhite;
+  text-align: center;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 30px;
+}
+
+.productText > p {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.productItem {
+  border: 1px solid gray;
+}
+
+.container {
+  margin: 10px;
+  width: 600px;
+  margin-top: 80px;
+}
+
+.cartProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emptyCart {
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* counter.css */
+.counter {
+  border: 1px solid rgb(161, 161, 161);
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+  max-height: 40px;
+}
+
+.counter > button {
+  margin: 1px;
+  font-size: 20px;
+  padding: 3px;
+  width: 40px;
+  background-color: inherit;
+  border: 0;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.counter > span {
+  margin: 10px;
+}
